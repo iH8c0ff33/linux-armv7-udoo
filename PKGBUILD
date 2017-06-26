@@ -33,7 +33,7 @@ build() {
     make ${MAKEFLAGS} zImage modules dtbs
 }
 
-_package() {
+package() {
     pkgdesc="The Linux Kernel and modules - ${_desc}"
     depends=('coreutils' 'linux-firmware' 'kmod')
     optdepends=('crda: set porper wireless channels for your country')
