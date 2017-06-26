@@ -1,6 +1,7 @@
 buildarch=4
 
 pkgbase=linux-armv7-udoo
+pkgname=("${pkgbase}")
 _srcname=v3.14.56
 _kernelname=${pkgbase#linux}
 _desc="ARMv7 UDOO QUAD/DUAL"
@@ -16,5 +17,6 @@ md5sums=("8d99ea563fe4bb451f945bea02b85fd9")
 
 prepare() {
     echo "$(pwd)"
+    echo "${pkgdir}"
     echo "${srcdir}/${_srcname}"
 }
