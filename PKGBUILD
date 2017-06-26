@@ -12,7 +12,7 @@ license=('GPL2')
 makedepends=('xmlto' 'docbook-xsl' 'kmod' 'inetutils' 'bc' 'git' 'uboot-tools' 'vboot-utils' 'dtc')
 options=('!strip')
 source=("https://github.com/UDOOboard/linux_kernel/archive/${_srcname}.tar.gz")
-md5sums=("8a7488c529dadc1ae5ee0c5e4e6bd477")
+md5sums=("8d99ea563fe4bb451f945bea02b85fd9")
 
 prepare() {
     echo "$(pwd)"
