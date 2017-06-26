@@ -14,7 +14,7 @@ license=('GPL2')
 makedepends=('xmlto' 'docbook-xsl' 'kmod' 'inetutils' 'bc' 'git' 'uboot-tools' 'vboot-utils' 'dtc')
 options=('!strip')
 source=("https://github.com/iH8c0ff33/linux_kernel/archive/${_pkgurlname}.tar.gz")
-md5sums=("8d99ea563fe4bb451f945bea02b85fd9")
+md5sums=("78f60b29291d709fe64b528221602d45")
 
 prepare() {
     # add pkgrel to extraversion
