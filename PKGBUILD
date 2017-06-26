@@ -18,7 +18,7 @@ md5sums=("78f60b29291d709fe64b528221602d45")
 
 prepare() {
     # add pkgrel to extraversion
-    sed -ri "s|^(EXTRAVERSION =)(.*)|\1 \2-${pkgrel}|" Makefile
+    sed -ri "s|^(EXTRAVERSION =)(.*)|\1 \2-${pkgrel}|" "${srcdir}/${_srcname}/Makefile"
     echo "$(pwd)"
     echo "${pkgdir}"
     echo "${srcdir}/${_srcname}"
