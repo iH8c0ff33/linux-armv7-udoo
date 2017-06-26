@@ -36,7 +36,7 @@ build() {
 _package() {
     pkgdesc="The Linux Kernel and modules - ${_desc}"
     depends=('coreutils' 'linux-firmware' 'kmod')
-    optdepends('crda: set porper wireless channels for your country')
+    optdepends=('crda: set porper wireless channels for your country')
     provides=('kernel26' "linux=${pkgver}")
     conflicts=('linux')
     replaces=('linux-mvebu' 'linux-udoo' 'linux-sun4i' 'linux-sun5i' 'linux-sun7i' 'linux-usbarmory' 'linux-wandboard' 'linux-clearfog')
